@@ -1,0 +1,108 @@
+.banner {
+  // height: 100vh;
+  padding: calc(150px + (180 - 150) * ((100vw - 786px) / (1600 - 786))) 0 calc(40px + (80 - 40) * ((100vw - 786px) / (1600 - 786)));
+  
+  .maintext {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+    color: $secondary-color;
+    padding: 0;
+    margin: 0;
+    span {
+      color:rgb(81, 78, 78)
+    }
+  }
+
+  .secondarytext {
+    font-weight: 600;
+    font-size: calc(22px + (35 - 22) * ((100vw - 786px) / (1600 - 786)));
+  }
+
+  &__content {
+    padding: 0;
+    margin: 0;
+    background: url("/img/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width:1500px) {
+      background-size: contain;
+    }
+    background-position:-20% 0;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    h2 {
+      color: $secondary-color
+    }
+    a {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 25px;
+      color: white;
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+   
+    .btn2 {
+      padding:17px 0;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 15px;
+      width: 315px;
+      height: 52px;
+      background-color: $secondary-color;
+    }
+  }
+}
+
+
+
+//Slider 
+.slider {
+  display: flex!important;
+  justify-content: space-between!important;
+  flex-direction: column;
+  margin-top: calc(25px + (140 - 25) * ((100vw - 320px) / (1600 - 320)));
+  align-items: center!important;
+  // width: 20%!important;
+  img {
+    margin-bottom: 30px;
+  }
+  &__text {
+    display: inline-block!important;
+    vertical-align: middle!important;
+    line-height: normal;
+
+    p {
+      width: 250px;
+      height: 90px;
+      font-size: 20px;
+      // align-items: center;
+  
+      border:1px solid $primary-color;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+  }
+  
+}
+
+.freeBtn {
+  color: white;
+  padding:20px 50px;
+  width: 315px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  height: 71px;
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
+  border-radius: 15px;
+}

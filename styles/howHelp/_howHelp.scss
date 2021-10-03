@@ -1,0 +1,39 @@
+.howHelp {
+  .howHelp__lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .howHelp__list {
+    
+    width: 50%;
+    p {
+    }
+    @media(max-width:768px) {
+      width: 100%;
+    }
+    &__right {
+      text-align: right;
+    }
+    &__line {
+      display: flex;
+    }
+
+    &__circle {
+      text-align: center;
+      color: $secondary-color;
+      border:1px solid $primary-color;
+      border-radius: 50%;
+      height:  calc(50px + (100 - 50) * ((100vw - 786px) / (1600 - 786)));
+      width:  calc(50px + (100 - 50) * ((100vw - 786px) / (1600 - 786)));
+      font-size: calc(30px + (55 - 30) * ((100vw - 786px) / (1600 - 786)));
+      
+      &::after {
+        // width: 50%!important;
+        // width: 100%;
+        // top:-20px;
+      }
+     
+    }
+  }
+}

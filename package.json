@@ -8,8 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.4",
+    "js-cookie": "^3.0.1",
     "next": "11.1.2",
+    "next-redux-wrapper": "^7.0.5",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.5",
+    "react-slick": "^0.28.1",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.8",
+    "slick-carousel": "^1.8.1"
   }
 }

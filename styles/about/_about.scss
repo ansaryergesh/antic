@@ -1,0 +1,15 @@
+.about {
+  background:url("/img/bgLine1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  h2 {
+    font-weight: 600;
+  }
+  p {
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (1600 - 320)));
+  }
+  p span {
+    color: $secondary-color;
+  }
+}

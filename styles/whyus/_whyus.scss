@@ -1,0 +1,79 @@
+.whyus {
+  background: url("/img/bgLine1.svg"), url("/img/bgLine2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // height: 1500px;
+  background-position: -20% center, bottom center;
+  @media(max-width:460px) {
+    background: url("/img/bgLineMob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h2 {
+    font-weight: 600;
+  }
+  &__lists {
+    
+    margin-top:calc(50px + (125 - 50) * ((100vw - 786px) / (1600 - 786)));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media(max-width:768px) {
+      flex-direction: column;
+    }
+  }
+  &__list {
+    font-size: calc(17px + (25 - 17) * ((100vw - 786px) / (1600 - 786)));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    img {
+      margin-bottom: 20px;
+      @media(max-width:768px) {
+        height: 60px;
+      }
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+    @media(max-width:768px) {
+      flex-basis: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+     
+      p {
+        width: 80%;
+        margin: auto;
+      }
+    }
+    &__half {
+      flex-basis: 48%;
+      margin-bottom: 20px;
+      @media(max-width:768px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__protected {
+    margin:$margin;
+    background-color: $primary-color;
+    width: 60%;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 44px -12px #C16C6C;
+
+    &__counter {
+      height: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320)));
+      background-color: white;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
